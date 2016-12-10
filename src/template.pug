@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= title
+    script(src="/app.js", defer)
+    style.
+      body {
+        min-height: 150vh;
+      }
+      .tag {
+        background-color: #eee;
+      }
+      .tag::before {
+        content: "<";
+      }
+      .tag::after {
+        content: " />";
+      }
+
+  body
+    #root!= markup
